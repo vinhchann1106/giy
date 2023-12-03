@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Genius Inside You</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="../../assets/css/method.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <audio controls id="deactivate" style="display: none">
+      <source src="../../assets/audio/deactivate.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls id="activate" style="display: none">
+      <source src="../../assets/audio/activate.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls id="stop" style="display: none">
+      <source src="../../assets/audio/stop.mp3" type="audio/mpeg" />
+    </audio>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/" class="logo">
+          <div class="logo-img">
+            <img src="../../assets/img/logo.jpg" alt="" />
+          </div>
+          <div class="logo-content">Genius Inside You</div>
+        </a>
+        <ul class="menu">
+          <li class="menu-item">
+            <i class="fa-solid fa-house"></i>
+            <a href="/" class="menu-link">Trang chủ</a>
+          </li>
+          <li class="menu-item">
+            <i class="fas fa-bolt"></i>
+            <a href="/#methodology" class="menu-link">Phương pháp</a>
+          </li>
+
+          <div class="nav-actions">
+            <div
+              class="nav-actions__action-connect animation-btn-hover animation-btn-hover--dark"
+            >
+              <a href="/#connect" class="">Kết nối ngay</a>
+              <i class="fa-solid fa-user-group"></i>
+            </div>
+          </div>
+        </ul>
+        <span class="nav__menu-open">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span class="nav__menu-close">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <div class="method-wrapper">
+        <div class="container">
+          <a href="../../method_list.html" class="back-page">
+            <i class="fa-solid fa-angle-left"></i>
+            Các phương pháp
+          </a>
+          <h2 class="method-heading">Phương pháp Pomodoro</h2>
+          <div class="method-content">
+            <div class="method-desc">
+              Phương pháp Pomodoro là một kỹ thuật quản lý thời gian giúp tăng
+              cường sự tập trung và hiệu suất. Đây là cách thức cơ bản:
+              <ol>
+                <li>
+                  <div>
+                    <strong>Đặt mục tiêu công việc: </strong>
+                    <p class="idea">
+                      Chọn một công việc cụ thể bạn muốn hoàn thành.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Đặt hẹn với thời gian: </strong>
+                    <p class="idea">
+                      Đặt đồng hồ hẹn giờ (Pomodoro) trong 25 phút và cam kết
+                      tập trung hoàn toàn vào công việc cho đến khi hẹn giờ kết
+                      thúc.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Nghỉ ngơi: </strong>
+                    <p class="idea">
+                      Sau mỗi chu kỳ Pomodoro, nghỉ ngơi ngắn, khoảng 5 phút.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Lặp lại: </strong>
+                    <p class="idea">
+                      Lặp lại chu kỳ trên sau mỗi 25 phút làm việc và 5 phút
+                      nghỉ ngơi. Sau mỗi bốn chu kỳ, nghỉ nghỉ lâu hơn, khoảng
+                      15-30 phút.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Ghi chú công việc đã hoàn thành: </strong>
+                    <p class="idea">
+                      Khi hoàn thành một nhiệm vụ, đánh dấu hoặc ghi chú lại.
+                      Điều này giúp theo dõi tiến triển.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+              <div class="method-note">
+                <strong>Lưu ý:</strong>
+                <p>
+                  Pomodoro không chỉ giúp tăng cường sự tập trung mà còn giúp
+                  người thực hiện nhiệm vụ duy trì năng lượng và tránh cảm giác
+                  mệt mỏi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pomodoro__clock-wrapper">
+            <h4 class="pomodoro__clock--heading">
+              <i class="fa-regular fa-clock"></i>
+              Đồng hồ Pomodoro
+            </h4>
+            <div class="podomoro__clock-container">
+              <div class="podomoro__clock-time rest-status">00:00</div>
+              <div class="podomoro__clock-right">
+                <form class="podomoro__clock-form">
+                  <div class="podomoro__clock-form-group">
+                    <label for="">Số phút làm: </label>
+                    <input type="number" value="25" class="minute-do" />
+                  </div>
+                  <div class="podomoro__clock-form-group">
+                    <label for="">Số phút nghỉ: </label>
+                    <input type="number" value="5" class="minute-rest" />
+                  </div>
+                  <div class="podomoro__clock-form-group">
+                    <label for="">Số lần: </label>
+                    <input type="number" min="1" value="1" class="times" />
+                  </div>
+                </form>
+                <div class="podomoro__clock-action">
+                  <button class="podomoro__clock-action--btn btn-action-time">
+                    Bắt đầu
+                    <i class="fa-solid fa-circle-play"></i>
+                  </button>
+                  <button class="podomoro__clock-action--btn btn-action-reset">
+                    Làm lại
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

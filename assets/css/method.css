@@ -1,0 +1,95 @@
+.method-wrapper {
+    margin: 120px 0;
+    text-align: justify;
+}
+
+.back-page {
+    display: inline-block;
+    color: var(--link-color);
+    font-weight: 500;
+    transition: all 0.2s ease-out;
+    margin-bottom: 12px;
+}
+
+.back-page:hover {
+    transform: translateX(-4px);
+}
+
+/* Css for paragraph */
+
+
+.method-heading {
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-bottom: 6px;
+}
+
+.method-content {
+    padding-right: 8px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #000;
+}
+
+.method-desc {
+    font-size: 1.6rem;
+}
+
+.method-wrapper ol {
+    padding-top: 2px;
+    padding-left: 24px;
+}
+
+.method-content strong {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+
+.method-content li {
+    margin: 2px 0;
+}
+
+ol li .idea {
+    padding-left: 2px;
+}
+
+ul li .idea {
+    padding-left: 12px;
+}
+
+
+.method-note strong {
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+.method-note-no-underline strong {
+    text-decoration: none;
+}
+
+a.method-selection {
+    display: inline-block;
+    color: var(--link-color);
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+a.method-selection:hover {
+    transform: translateX(4px);
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 884px) {
+    .method-wrapper {
+        margin: 160px 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .method-wrapper {
+        margin: 180px 0;
+    }
+}
